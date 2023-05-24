@@ -1,0 +1,75 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import './style/button.css';
+@import 'tailwindcss/utilities';
+@import './style/nav.css';
+@import './style/style.css';
+@import './style/form.css';
+@import './style/table.css';
+@import './style/header.css';
+
+:root {
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+.dark {
+  --text-color: #fff;
+  --background-color: #333;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.text-container {
+  animation: moveText 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveText {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(1rem);
+  }
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+.hover\:pointer-up:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+.hover\:pointer-right:hover {
+  cursor: pointer;
+  transform: translateX(-3px);
+}

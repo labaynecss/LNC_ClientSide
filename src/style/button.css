@@ -1,0 +1,17 @@
+.btn-dark {
+  @apply bg-gray-900 px-4 py-3 capitalize font-medium;
+}
+.btn-indigo {
+  @apply bg-indigo-600 text-white capitalize font-medium px-4 py-2 rounded-sm cursor-pointer !important;
+}
+
+.btn-warning {
+  @apply bg-orange-500 py-[6px];
+}
+.btn-danger {
+  @apply bg-rose-600 py-[6px];
+}
+
+.btn {
+  @apply py-2 px-5 text-white rounded uppercase;
+}

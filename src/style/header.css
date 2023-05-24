@@ -1,0 +1,10 @@
+.header-cover {
+  @apply absolute inset-0 w-full h-full bg-black/20;
+}
+.header-heading {
+  @apply text-yellow-50 text-2xl capitalize font-medium;
+}
+
+.header {
+  @apply w-full h-[300px] bg-[url('../assets/images/shoplnc.jpg')] bg-no-repeat bg-cover relative -z-10;
+}

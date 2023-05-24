@@ -1,0 +1,12 @@
+.nav {
+  @apply bg-gray-800 w-full h-[70px] flex items-center shadow-sm fixed top-0 right-0 left-0 z-50;
+}
+.nav-li {
+  @apply ml-8 text-black hover:text-blue-500 hover:underline focus:text-blue-500 focus:underline;
+}
+.nav-link {
+  @apply text-base font-medium capitalize text-black hover:text-blue-500 hover:underline focus:text-blue-500 focus:underline;
+}
+.nav-circle {
+  @apply flex items-center justify-center w-[21px] h-[21px] rounded-full bg-orange-400 text-xs text-white font-medium absolute -top-2 -right-3;
+}
